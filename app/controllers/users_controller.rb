@@ -4,7 +4,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.all # this uses the User model object to query the db for .all
+                      # and save the result of that query to the @users variable.
   end
 
   # GET /users/1
